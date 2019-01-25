@@ -1,3 +1,24 @@
+Actual New York Times Site Includes:
+* Article headlines
+* Links to full articles
+* Navigation bar
+* "Today's paper" link
+  * A paper is comprised of:
+    * Front page with top stories
+    * Articles
+      * paragraphs
+      * occasional picture
+      * title
+      * date
+      * author
+      * author link
+      * links to talk about article on social medias (like the hashtag on twitter)
+      * occasional video
+      * videos and pictures have blurbs about them
+      * separated into story sections with sub titles
+
+
+
 # NewYorkTimesClone
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
