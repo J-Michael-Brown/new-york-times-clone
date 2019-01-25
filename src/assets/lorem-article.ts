@@ -1,10 +1,10 @@
-import { Article } from '../../app/models/article.model';
-import { Author } from '../../app/models/author.model';
-import { SectionPiece } from '../../app/models/section-piece.model';
+import { Article } from '../app/models/article.model';
+import { Author } from '../app/models/author.model';
+import { SectionPiece } from '../app/models/section-piece.model';
 
 const loremArticle = new Article(
   'Lorem Ipsum',
-  Date.new(),
+  new Date(),
   new Author('Michael', 'Brown'),
   [
     new SectionPiece('Beginning', [
