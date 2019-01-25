@@ -1,21 +1,16 @@
-Currently looking into pipelines
-
-RE: report
-  pipelines are something I can implement later. For now, I'll fill out the pages I believe to be critical.
+Working on filling out author page
 
 Actual New York Times Site Includes:
 * Article headlines
 * Links to full articles
 * Navigation bar
-* "Today's paper" link
-  * A paper is comprised of:
-    * Front page
-      * top stories - (most interaction/recent?)
-      * latest update - a la article date
-      * links to different sections (world/health/science/sports/etc.)
-    * Newspaper sections
-      * Articles
-        * blurb about the article
+* the site is comprised of:
+  * Front page
+    * top stories - (most interaction/recent?)
+    * latest update - a la article date
+    * links to different sections (world/health/science/sports/etc.)
+      * many Articles
+        * blurb about the article/story
         * section relevance (world/health/science/sports)
         * paragraphs -(check)
         * title -(check)
@@ -31,12 +26,13 @@ Actual New York Times Site Includes:
           * comments can have replies
             * replies can have replies
       * top stories
-    * Authors
-      * first/last name
-      * has many articles
-      * bio
-      * picture
-
+      * query by sub-section - nyt.com/sections/world/africa?action=...
+  * Authors
+    * first/last name
+    * has many articles
+    * bio
+    * picture
+* a paper is every article released on a specific day, with fewer layers of specificity (sub sections mostly removed)
 
 
 
