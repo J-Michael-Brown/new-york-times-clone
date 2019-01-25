@@ -1,11 +1,11 @@
 import { Article } from '../app/models/article.model';
-import { Author } from '../app/models/author.model';
 import { SectionPiece } from '../app/models/section-piece.model';
+import { michael } from './lorem-author';
 
 const loremArticle = new Article(
   'Lorem Ipsum',
   new Date(),
-  new Author('Michael', 'Brown'),
+  michael,
   [
     new SectionPiece('', [
       'dolor sit amet, consectetur adipiscing elit. Nunc non lectus sapien. Ut dignissim augue sed ornare volutpat. Phasellus finibus est libero, eu maximus dui egestas eu. Aenean porta nec diam id volutpat. Sed ac ullamcorper ipsum. Phasellus elementum libero turpis, ut vehicula erat consequat et. Donec finibus, ex vel pulvinar consectetur, elit justo rutrum nibh, nec tincidunt eros urna eget magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst.',
