@@ -1,5 +1,5 @@
 class SectionPiece {
-  constructor(public title: sting, public body: any[] = []){}
+  constructor(public title: string, public body: any[] = []){}
 }
 
 export { SectionPiece }

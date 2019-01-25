@@ -1,5 +1,5 @@
 class Author {
-  constructor(public firstName: sting, public lastName: string) {}
+  constructor(public firstName: string, public lastName: string) {}
 }
 
 export { Author }
