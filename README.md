@@ -1,5 +1,8 @@
 Currently looking into pipelines
 
+RE: report
+  pipelines are something I can implement later. For now, I'll fill out the pages I believe to be critical.
+
 Actual New York Times Site Includes:
 * Article headlines
 * Links to full articles
