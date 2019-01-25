@@ -9,18 +9,34 @@ Actual New York Times Site Includes:
 * Navigation bar
 * "Today's paper" link
   * A paper is comprised of:
-    * Front page with top stories
-    * Articles
-      * paragraphs -(check)
-      * title -(check)
-      * date -(check)
-      * author -(check)
-      * occasional picture
-      * author link
-      * links to talk about article on social medias (like the hashtag on twitter)
-      * occasional video
-      * videos and pictures have blurbs about them
-      * separated into story sections with sub titles
+    * Front page
+      * top stories - (most interaction/recent?)
+      * latest update - a la article date
+      * links to different sections (world/health/science/sports/etc.)
+    * Newspaper sections
+      * Articles
+        * blurb about the article
+        * section relevance (world/health/science/sports)
+        * paragraphs -(check)
+        * title -(check)
+        * date -(check)
+        * author -(check)
+        * occasional picture
+        * author link
+        * links to talk about article on social medias (like the hashtag on twitter)
+        * occasional video
+        * videos and pictures have blurbs about them
+        * separated into story sections with sub titles
+        * comments (moderated and stored by the site owner)
+          * comments can have replies
+            * replies can have replies
+      * top stories
+    * Authors
+      * first/last name
+      * has many articles
+      * bio
+      * picture
+
 
 
 
