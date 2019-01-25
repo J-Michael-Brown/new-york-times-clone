@@ -9,6 +9,6 @@ import { Article } from '../models/article.model';
 })
 export class ArticleComponent{
 
-  article: Article = loremArticle;
+  newsArticle: Article = loremArticle;
 
 }
