@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
+import { AuthorComponent } from './author/author.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticleComponent
+    ArticleComponent,
+    AuthorComponent
   ],
   imports: [
     BrowserModule
