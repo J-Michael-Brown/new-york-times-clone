@@ -35,6 +35,9 @@ Actual New York Times Site Includes:
 * a paper is every article released on a specific day, with fewer layers of specificity (sub sections mostly removed)
 
 
+# Known Bugs
+
+* Bootstrap not functioning
 
 # NewYorkTimesClone
 
