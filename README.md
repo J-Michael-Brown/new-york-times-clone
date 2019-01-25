@@ -1,3 +1,5 @@
+Currently looking into pipelines
+
 Actual New York Times Site Includes:
 * Article headlines
 * Links to full articles
@@ -6,11 +8,11 @@ Actual New York Times Site Includes:
   * A paper is comprised of:
     * Front page with top stories
     * Articles
-      * paragraphs
+      * paragraphs -(check)
+      * title -(check)
+      * date -(check)
+      * author -(check)
       * occasional picture
-      * title
-      * date
-      * author
       * author link
       * links to talk about article on social medias (like the hashtag on twitter)
       * occasional video
