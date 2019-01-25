@@ -7,7 +7,7 @@ const loremArticle = new Article(
   new Date(),
   new Author('Michael', 'Brown'),
   [
-    new SectionPiece('Beginning', [
+    new SectionPiece('', [
       'dolor sit amet, consectetur adipiscing elit. Nunc non lectus sapien. Ut dignissim augue sed ornare volutpat. Phasellus finibus est libero, eu maximus dui egestas eu. Aenean porta nec diam id volutpat. Sed ac ullamcorper ipsum. Phasellus elementum libero turpis, ut vehicula erat consequat et. Donec finibus, ex vel pulvinar consectetur, elit justo rutrum nibh, nec tincidunt eros urna eget magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst.',
       'Nulla aliquet ligula ut fermentum condimentum. Aliquam sagittis pellentesque ante, vitae semper sapien malesuada et. Phasellus in tempus neque. Etiam porttitor posuere accumsan.',
       'Mauris orci justo, sollicitudin ut semper tincidunt, facilisis vitae lorem. Duis ac ex vitae neque finibus ultrices. Morbi at ante convallis enim porttitor sodales. Nam mollis, quam sed blandit aliquam, mi arcu ullamcorper lectus, sed placerat odio erat et sem.',

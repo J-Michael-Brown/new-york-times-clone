@@ -1,7 +1,9 @@
-<h2>{{newsArticle.title}}</h2>
-<p>By, {{newsArticle.author.firstName}} {{newsArticle.author.lastName}}</p>
-<p>{{newsArticle.getDate()}}</p>
-<div *ngFor="let sectionPiece of newsArticle.sectionPieces">
-  <h4 *ngIf="sectionPiece.title">{{sectionPiece.title}}</h4>
-  <p *ngFor="let paragraph of sectionPiece.body">{{paragraph}}</p>
+<div class="news-article">
+  <h2>{{newsArticle.title}}</h2>
+  <p>By, {{newsArticle.author.firstName}} {{newsArticle.author.lastName}}</p>
+  <p>{{newsArticle.getDate()}}</p>
+  <div *ngFor="let sectionPiece of newsArticle.sectionPieces">
+    <h4 *ngIf="sectionPiece.title">{{sectionPiece.title}}</h4>
+    <p *ngFor="let paragraph of sectionPiece.body">{{paragraph}}</p>
+  </div>
 </div>
