@@ -1,5 +1,7 @@
 implementing comments on articles
 
+investigating API calls
+
 figuring out database author/article integration -X (canceled)
 
 Actual New York Times Site Includes:
