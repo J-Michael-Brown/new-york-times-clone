@@ -26,10 +26,8 @@ export class ArticleComponent implements OnInit {
     });
     this.articleToDisplay = this.articlesService.getArticleById(articleId);
 
-    this.articlesService.getArticleById(articleId).subscribe(dataLastEmittedFromObserver => {
-     this.date = displayDate(new Date(dataLastEmittedFromObserver.date));
-
-     console.log(this.date);
+    this.articlesService.getArticleById(articleId).subscribe(lastVersionOfArticle => {
+     this.date = displayDate(new Date(lastVersionOfArticle.date));
    })
   }
 
