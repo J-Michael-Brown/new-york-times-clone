@@ -8,11 +8,11 @@ const appRoutes: Routes = [
   //   component: HomeComponent
   // },
   {
-    path: 'author',
+    path: 'authors',
     component: AuthorComponent
   },
   {
-    path: 'article',
+    path: 'articles',
     component: ArticleComponent
   }
 
