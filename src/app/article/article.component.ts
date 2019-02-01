@@ -21,8 +21,7 @@ export class ArticleComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters)=> {
-
-    this.articleId = urlParameters['id'];
+      this.articleId = urlParameters['id'];
     });
     this.articleToDisplay = this.articlesService.getArticleById(this.articleId);
 

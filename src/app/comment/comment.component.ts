@@ -12,7 +12,7 @@ import { Comment } from 'app/models/comment.model';
 })
 export class CommentComponent implements OnInit {
   articleId: string;
-  comments: FirebaseListObservable<any[]>;
+  // comments: FirebaseListObservable<any[]>;
 
   constructor(private route: ActivatedRoute, private location: Location, private commentService: CommentService) { }
 
@@ -22,7 +22,7 @@ export class CommentComponent implements OnInit {
     this.articleId = urlParameters['id'];
     });
 
-    this.comments = this.commentService.getCommentsOnArticleId(this.articleId);
+    // this.comments = this.commentService.getCommentsOnArticleId(this.articleId);
     //
     // this.articlesService.getArticleById(this.articleId).subscribe(lastVersionOfArticle => {
     //   this.date = displayDate(new Date(lastVersionOfArticle.date));
