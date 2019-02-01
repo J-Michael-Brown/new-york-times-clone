@@ -1,4 +1,4 @@
-Working on Services
+figuring out database author/article integration
 
 Actual New York Times Site Includes:
 * Article headlines
