@@ -1,4 +1,6 @@
-figuring out database author/article integration
+implementing comments on articles
+
+figuring out database author/article integration -X (canceled)
 
 Actual New York Times Site Includes:
 * Article headlines
