@@ -2,7 +2,6 @@ import { Author } from './author.model';
 import { SectionPiece } from './section-piece.model';
 
 class Article {
-  months: string[] = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   constructor(public title: string, public date: Date, public author: Author, public sectionPieces: SectionPiece[]) {}
 
   getDate() {
@@ -10,4 +9,9 @@ class Article {
   }
 }
 
-export { Article }
+function getDate(date: Date) {
+  const months: string[] = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return (months[date.getUTCMonth()] + '. ' + date.getUTCDate() + ', ' + date.getUTCFullYear());
+}
+
+export { Article, getDate }
