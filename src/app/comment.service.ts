@@ -19,6 +19,9 @@ export class CommentService {
   getCommentById(commentId: string) {
     return this.database.object('comments/' + commentId)
   }
+  getCommentsOnCommentId(commentId: string) {
+    return this.database.object('comments/' + commentId)
+  }
   // updateComment(localUpdatedComment){
   //   var commentEntryInFirebase = this.getCommentById(localUpdatedComment.$key);
   //   commentEntryInFirebase.update({title: localUpdatedComment.title,

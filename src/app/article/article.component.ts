@@ -15,18 +15,19 @@ export class ArticleComponent implements OnInit {
 
   articleToDisplay;
   date: string;
+  articleId: string;
 
   constructor(private route: ActivatedRoute, private location: Location, private articlesService: ArticlesService) {}
 
   ngOnInit() {
-    let articleId: string;
+    this.articleId: string;
     this.route.params.forEach((urlParameters)=> {
 
-    articleId = urlParameters['id'];
+    this.articleId = urlParameters['id'];
     });
-    this.articleToDisplay = this.articlesService.getArticleById(articleId);
+    this.articleToDisplay = this.articlesService.getArticleById(this.articleId);
 
-    this.articlesService.getArticleById(articleId).subscribe(lastVersionOfArticle => {
+    this.articlesService.getArticleById(this.articleId).subscribe(lastVersionOfArticle => {
      this.date = displayDate(new Date(lastVersionOfArticle.date));
    })
   }
