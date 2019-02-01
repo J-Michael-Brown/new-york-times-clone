@@ -9,9 +9,9 @@ class Article {
   }
 }
 
-function getDate(date: Date) {
+function displayDate(date: Date) {
   const months: string[] = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   return (months[date.getUTCMonth()] + '. ' + date.getUTCDate() + ', ' + date.getUTCFullYear());
 }
 
-export { Article, getDate }
+export { Article, displayDate }
