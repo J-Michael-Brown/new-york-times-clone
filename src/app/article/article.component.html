@@ -1,8 +1,8 @@
 <div class="news-article">
-  <h2>{{(articleToDisplay | async).title}}</h2>
-  <p>By, {{(articleToDisplay | async).author.firstName}} {{(articleToDisplay | async).author.lastName}}</p>
-  <p>{{getDate(Date((articleToDisplay | async).date))}}</p>
-  <div *ngFor="let sectionPiece of (articleToDisplay | async).sectionPieces">
+  <h2>{{(articleToDisplay | async)?.title}}</h2>
+  <p>By, {{(articleToDisplay | async)?.author.firstName}} {{(articleToDisplay | async)?.author.lastName}}</p>
+  <p>Published: {{date}}</p>
+  <div *ngFor="let sectionPiece of (articleToDisplay | async)?.sectionPieces">
     <h4 *ngIf="sectionPiece.title">{{sectionPiece.title}}</h4>
     <p *ngFor="let paragraph of sectionPiece.body">{{paragraph}}</p>
   </div>
