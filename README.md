@@ -1,6 +1,6 @@
 implementing comments on articles
 
-investigating API calls
+investigating API calls -X (desired info not found)
 
 figuring out database author/article integration -X (canceled)
 
