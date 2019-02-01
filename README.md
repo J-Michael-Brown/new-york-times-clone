@@ -1,4 +1,4 @@
-Working on filling out author page
+Working on Routing
 
 Actual New York Times Site Includes:
 * Article headlines
