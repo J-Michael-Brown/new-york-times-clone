@@ -20,7 +20,6 @@ export class ArticleComponent implements OnInit {
   constructor(private route: ActivatedRoute, private location: Location, private articlesService: ArticlesService) {}
 
   ngOnInit() {
-    this.articleId: string;
     this.route.params.forEach((urlParameters)=> {
 
     this.articleId = urlParameters['id'];
