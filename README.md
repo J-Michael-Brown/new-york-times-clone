@@ -82,7 +82,7 @@ Licensed under the MIT license.
 Copyright (c) 2019 ** Michael Brown **
 
 ## Developer Notes    
-README.md and SETUP.md template provided by [Ralph](https://github.com/pseudoralph)
+README.md and SETUP.md template provided by [Ralph Perdomo](https://github.com/pseudoralph)
 
 Working on:
 

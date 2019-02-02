@@ -8,6 +8,12 @@ Here are some links in case you need information about setup for other operating
 [Karma](https://karma-runner.github.io/latest/index.html);
 [TypeScript](https://www.typescriptlang.org/).
 
+## Necessary Setup for API keys and Database
+
+This project uses a personal [firebase database](https://firebase.google.com) to get its information
+
+following along with the steps in [this lesson](https://www.learnhowtoprogram.com/javascript/angular-extended/firebase-introduction-and-setup) import this file into a **realtime database** `Desktop/new-york-times-clone/src/assets/lorem-nyt.json`
+
 ### Basic Setup
 You will need to have these tools installed on your machine. They may already be installed - see the 'Confirm installation' sections below.
 
