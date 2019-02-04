@@ -15,6 +15,8 @@ export class CommentComponent implements OnInit {
   trueComments;
   commentSnapshot;
   commentArray: Comment[];
+  getCommentsOfComment = getCommentsOfComment;
+  articleCommentSnapshot;
 
   constructor(private route: ActivatedRoute, private location: Location, private commentService: CommentService) { }
 
@@ -27,10 +29,10 @@ export class CommentComponent implements OnInit {
     this.trueComments = this.commentService.getComments();
     const commentArray = this.commentArray;
     this.commentService.getComments().subscribe(lastVersionOfComments => {
-      this.commentSnapshot = getCommentsOfArticle(lastVersionOfComments, parseInt(this.articleId));
-      this.commentSnapshot.forEach((comment)=> {
-        console.log(comment);
-      })
+      this.commentSnapshot = lastVersionOfComments;
+    });
+    this.commentService.getComments().subscribe(lastVersionOfComments => {
+      this.articleCommentSnapshot = getCommentsOfArticle(lastVersionOfComments, parseInt(this.articleId));
     });
   }
 

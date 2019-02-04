@@ -13,7 +13,7 @@ class Comment {
 function getCommentsOfComment(comments, commentId) {
   const commentsForCommentId: any[] = [];
   comments.forEach(function(comment) {
-    if(comment.commentKey = commentId){
+    if(comment.commentKey == commentId){
       commentsForCommentId.push(comment)
     }
   });
@@ -23,7 +23,6 @@ function getCommentsOfComment(comments, commentId) {
 function getCommentsOfArticle(comments, articleId) {
   const commentsForArticleId: any[] = [];
   comments.forEach(function(comment) {
-    console.log(comment)
     if(comment.articleKey == articleId){
       commentsForArticleId.push(comment)
     }
