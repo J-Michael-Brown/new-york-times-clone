@@ -27,7 +27,7 @@ export class ArticleComponent implements OnInit {
 
     this.articlesService.getArticleById(this.articleId).subscribe(lastVersionOfArticle => {
      this.date = displayDate(new Date(lastVersionOfArticle.date));
-   })
+    })
   }
 
 }
