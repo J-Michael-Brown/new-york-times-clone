@@ -38,6 +38,10 @@ Here are some links in case you need information about setup for other operating
 
 * error TS2339: Property '$key' does not exist on type 'Article'. Message appears when trying to prepare project for deployment, prevents creation of dist/ folder.
 
+* replies of replies do not show up
+
+* Author page is kind of broken
+
 ## Support and contact details
 Michael Brown :: jmichaelbrown132737@gmail.com
 
