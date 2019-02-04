@@ -84,9 +84,10 @@ Copyright (c) 2019 ** Michael Brown **
 ## Developer Notes    
 README.md and SETUP.md template provided by [Ralph Perdomo](https://github.com/pseudoralph)
 
+Critical Bug found: author page contains info that causes file to not compile - removed author asset
+
+I would prefer comments to be an API call with params, but I don't yet know how to create an API
+
 Working on:
 
-* Implementing comments on articles
-  * current plan: get snapshot of comments to sort first
-
-* Critical Bug found: author page contains info that causes file to not compile - removed author asset
+* Fix Author Call database call (separate authors from articles and alter logic to match).
