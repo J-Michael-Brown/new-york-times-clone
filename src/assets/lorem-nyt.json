@@ -1,4 +1,4 @@
-{
+export const database = {
   "articles": [{
     "title": "Lorem Ipsum",
     "date": "Fri Feb 01 2019",
