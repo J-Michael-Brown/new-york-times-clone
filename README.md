@@ -88,3 +88,5 @@ Working on:
 
 * Implementing comments on articles
   * current plan: get snapshot of comments to sort first
+
+* Critical Bug found: author page contains info that causes file to not compile - removed author asset

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { michael } from '../../assets/lorem-author';
+import { michael } from '../../assets/lorem-nyt';
 import { Author } from '../models/author.model'
 
 @Component({
@@ -9,6 +9,6 @@ import { Author } from '../models/author.model'
 })
 export class AuthorComponent {
 
-  author: Author = michael;
+  author: Author = database.articles[0].author;
 
 }
