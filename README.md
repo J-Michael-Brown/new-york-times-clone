@@ -87,3 +87,4 @@ README.md and SETUP.md template provided by [Ralph Perdomo](https://github.com/p
 Working on:
 
 * Implementing comments on articles
+  * current plan: get snapshot of comments to sort first
