@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { CommentService } from '../comment.service';
-import { Comment } from 'app/models/comment.model';
+import { Comment, getCommentsOfComment, getCommentsOfArticle } from 'app/models/comment.model';
 
 @Component({
   selector: 'app-comment',
@@ -27,27 +27,8 @@ export class CommentComponent implements OnInit {
     this.trueComments = this.commentService.getComments();
     const commentArray = this.commentArray;
     this.commentService.getComments().subscribe(lastVersionOfComments => {
-      this.commentSnapshot = lastVersionOfComments;
+      this.commentSnapshot = getCommentsOfArticle(lastVersionOfComments, parseInt(this.articleId));
       this.commentSnapshot.forEach((comment)=> {
-        // if(comment.baseComment) {
-        //   commentArray.push(new Comment(
-        //     lastVersionOfComments.baseComment,
-        //     lastVersionOfComments.username,
-        //     lastVersionOfComments.content,
-        //     lastVersionOfComments.articleKey,
-        //     lastVersionOfComments.depth,
-        //     lastVersionOfComments.$key
-        //   ));
-        // }else {
-        //   commentArray.push(new Comment(
-        //     lastVersionOfComments.baseComment,
-        //     lastVersionOfComments.username,
-        //     lastVersionOfComments.content,
-        //     lastVersionOfComments.commentKey,
-        //     lastVersionOfComments.depth,
-        //     lastVersionOfComments.$key
-        //   ));
-        // }
         console.log(comment);
       })
     });
