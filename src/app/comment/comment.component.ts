@@ -12,8 +12,9 @@ import { Comment } from 'app/models/comment.model';
 })
 export class CommentComponent implements OnInit {
   articleId: string;
-  comments;
+  trueComments;
   commentSnapshot;
+  commentArray: Comment[];
 
   constructor(private route: ActivatedRoute, private location: Location, private commentService: CommentService) { }
 
@@ -23,11 +24,33 @@ export class CommentComponent implements OnInit {
     this.articleId = urlParameters['id'];
     });
 
-    this.comments = this.commentService.getComments();
-
+    this.trueComments = this.commentService.getComments();
+    const commentArray = this.commentArray;
     this.commentService.getComments().subscribe(lastVersionOfComments => {
       this.commentSnapshot = lastVersionOfComments;
-    })
+      this.commentSnapshot.forEach((comment)=> {
+        // if(comment.baseComment) {
+        //   commentArray.push(new Comment(
+        //     lastVersionOfComments.baseComment,
+        //     lastVersionOfComments.username,
+        //     lastVersionOfComments.content,
+        //     lastVersionOfComments.articleKey,
+        //     lastVersionOfComments.depth,
+        //     lastVersionOfComments.$key
+        //   ));
+        // }else {
+        //   commentArray.push(new Comment(
+        //     lastVersionOfComments.baseComment,
+        //     lastVersionOfComments.username,
+        //     lastVersionOfComments.content,
+        //     lastVersionOfComments.commentKey,
+        //     lastVersionOfComments.depth,
+        //     lastVersionOfComments.$key
+        //   ));
+        // }
+        console.log(comment);
+      })
+    });
   }
 
 }
